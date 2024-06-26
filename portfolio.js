@@ -91,7 +91,7 @@ export const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ Years",
+      fieldValue: "+1 Years",
     },
     {
       fieldName: "Freelance",
@@ -135,15 +135,16 @@ export const education = {
       degree: "Computer Science",
       duration: "2023 - Present",
     },
-    {
-      institution: "Online Courses",
-      degree: "Programming and Web Development",
-      duration: "2023 - 2024",
-    },
+
     {
       institution: "Efe",
       degree: "Soft Skills IT",
       duration: "2024",
+    },
+    {
+      institution: "Online Courses",
+      degree: "Programming and Web Development",
+      duration: "2023 - 2024",
     },
     {
       institution: "Rbk",
