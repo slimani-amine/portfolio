@@ -46,7 +46,7 @@ export const stats = [
   { num: 14, text: "Months of experience" },
   { num: 27, text: "Prejects completed" },
   { num: 12, text: "Technologies mastered" },
-  { num: 500, text: "Code commits" },
+  { num: 798, text: "Github Total Contributions" },
 ];
 
 export const services = [
