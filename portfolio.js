@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-
+export const pageTitle="Amine."
 export const homeInformation = {
   jobTitle: "Software Developer",
   name: "Amine Slimani",
@@ -11,7 +11,10 @@ export const homeInformation = {
 
 export const socials = [
   { icon: <FaTwitter />, path: "https://x.com/SlimaniA10996" },
-  { icon: <FaLinkedinIn />, path: "https://www.linkedin.com/in/med-amine-slimani/" },
+  {
+    icon: <FaLinkedinIn />,
+    path: "https://www.linkedin.com/in/med-amine-slimani/",
+  },
   { icon: <FaGithub />, path: "https://github.com/slimani-amine" },
 ];
 
@@ -20,4 +23,19 @@ export const stats = [
   { num: 75, text: "Prejects completed" },
   { num: 8, text: "Technologies mastered" },
   { num: 500, text: "Code commits" },
+];
+
+export const services = [
+  {
+    num: "01",
+    title: "Frontend Developer",
+    description: "Passionate about creating impactful frontend solutions.",
+    href: "",
+  },
+  {
+    num: "02",
+    title: "Backend Developer",
+    description: "Skilled in building robust backend systems.",
+    href: "",
+  },
 ];
