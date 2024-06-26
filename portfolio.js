@@ -22,7 +22,7 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate= "2024-06-26"
+export const lastUpdate = "2024-06-26";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
@@ -43,9 +43,9 @@ export const socials = [
 ];
 
 export const stats = [
-  { num: 13, text: "Months of experience" },
-  { num: 75, text: "Prejects completed" },
-  { num: 8, text: "Technologies mastered" },
+  { num: 14, text: "Months of experience" },
+  { num: 27, text: "Prejects completed" },
+  { num: 12, text: "Technologies mastered" },
   { num: 500, text: "Code commits" },
 ];
 
@@ -91,7 +91,7 @@ export const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ Months",
+      fieldValue: "2+ Years",
     },
     {
       fieldName: "Freelance",
