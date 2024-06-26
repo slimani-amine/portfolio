@@ -8,8 +8,11 @@ const Stats = () => {
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto">
         <div className="flex flex-wrap gap-6 maw-w-[800vw] mx-auto xl:max-w-none">
-          {stats.map((item) => (
-            <div className="flex-1 flex gap-4 items-center justify-center xl:justify-start ">
+          {stats.map((item, index) => (
+            <div
+              className="flex-1 flex gap-4 items-center justify-center xl:justify-start "
+              key={index}
+            >
               <CountUp
                 end={item.num}
                 duration={5}

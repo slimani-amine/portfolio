@@ -5,7 +5,7 @@ const ComingSoon = () => {
         Coming Soon
       </h1>
       <p className="text-white text-lg mb-8">
-        We're working hard to bring you something amazing. Stay tuned!
+        We&apos;re working hard to bring you something amazing. Stay tuned!
       </p>
     </div>
   );
