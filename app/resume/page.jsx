@@ -22,16 +22,38 @@ const Resume = () => {
     >
       <div className="container mx-auto">
         <Tabs
-          defaultValue="experience"
+          defaultValue="about"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl-mx-0 gap-6">
+            <TabsTrigger value="about">About me</TabsTrigger>
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
+          <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-full text-white/60 mx-auto xl:mx-0 ">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 gap-y-4 max-w-full mx-auto xl:mx-0">
+                  {about.info.map((item, index) => (
+                    <li
+                      key={index}
+                      className="flex items-center justify-center xl:justify-start gap-4 "
+                    >
+                      <span className=" text-white/60">{item.fieldName}:</span>
+                      <span className="text-lg ">{item.fieldValue}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </TabsContent>
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold"> {experience.title}</h3>
@@ -119,28 +141,7 @@ const Resume = () => {
               </div>
             </TabsContent>
 
-            <TabsContent
-              value="about"
-              className="w-full text-center xl:text-left"
-            >
-              <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-full text-white/60 mx-auto xl:mx-0 ">
-                  {about.description}
-                </p>
-                <ul className="grid grid-cols-1 gap-y-4 max-w-full mx-auto xl:mx-0">
-                  {about.info.map((item, index) => (
-                    <li
-                      key={index}
-                      className="flex items-center justify-center xl:justify-start gap-4 "
-                    >
-                      <span className=" text-white/60">{item.fieldName}:</span>
-                      <span className="text-lg ">{item.fieldValue}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </TabsContent>
+            
           </div>
         </Tabs>
       </div>
