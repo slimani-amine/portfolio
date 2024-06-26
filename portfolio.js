@@ -102,9 +102,9 @@ export const about = {
 
 export const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
+  title: "My Experience",
   description:
-    "I am a software developer with a passion for creating beautiful and intuitive digital experiences. I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.",
+    "A skilled software developer with a strong background in creating seamless digital experiences, specializing in both frontend and backend technologies.",
   items: [
     {
       company: "SoftyLines Dev",
@@ -126,16 +126,15 @@ export const experience = {
 
 export const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
+  title: "My Education",
   description:
-    "I am a software developer with a passion for creating beautiful and intuitive digital experiences. I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.",
+    "A dedicated learner with a solid foundation in computer science and various specialized IT programs, committed to continuous personal and professional development.",
   items: [
     {
       institution: "Horizon",
       degree: "Computer Science",
       duration: "2023 - Present",
     },
-
     {
       institution: "Efe",
       degree: "Soft Skills IT",
@@ -162,7 +161,7 @@ export const education = {
 export const skills = {
   title: "My Skills",
   description:
-    "I am a software developer with a passion for creating beautiful and intuitive digital experiences. I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.",
+    "Proficient in a diverse range of technologies, combining technical expertise with creativity to develop innovative solutions.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -172,7 +171,6 @@ export const skills = {
       icon: <FaCss3 />,
       name: "CSS3",
     },
-
     {
       icon: <FaJs />,
       name: "JavaScript",
@@ -211,7 +209,7 @@ export const skills = {
     },
     {
       icon: <SiMysql />,
-      name: "Mysql",
+      name: "MySQL",
     },
   ],
 };
