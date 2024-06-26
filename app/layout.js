@@ -5,7 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
-import { pageTitle } from "@/portfolio";
+import { lastUpdate, pageTitle } from "@/portfolio";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -28,7 +28,12 @@ export default function RootLayout({ children }) {
       <body className={jetbrainsMono.variable}>
         <Header />
         <StairTransition />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          {children}
+          <div className=" h-full text-end mx-8 xl:mt-24">
+            Last update : {lastUpdate}
+          </div>
+        </PageTransition>
       </body>
     </html>
   );

@@ -1,5 +1,9 @@
+const { default: ComingSoon } = require("@/components/ComingSoon")
+
 const Contact = () => {
-  return <div>Contact page</div>;
+  return (
+    <ComingSoon/>
+  );
 };
 
 export default Contact;

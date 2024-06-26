@@ -54,9 +54,6 @@ const Home = () => {
         </div>
       </div>
       <Stats />
-      <div className=" h-full text-end mx-8 xl:mt-24">
-        Last update : {homeInformation.lastUpdate}
-      </div>
     </section>
   );
 };

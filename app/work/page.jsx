@@ -1,5 +1,7 @@
+import ComingSoon from "@/components/ComingSoon";
+
 const Work = () => {
-  return <div>Work page</div>;
+  return <ComingSoon />;
 };
 
 export default Work;
