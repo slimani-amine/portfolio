@@ -22,7 +22,7 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate = "2024-06-26";
+export const lastUpdate = "2024-06-27";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
@@ -217,7 +217,7 @@ export const skills = {
 export const projects = [
   {
     num: "01",
-    category: "Backend",
+    as: "Backend Developer",
     title: "Kotteb",
     description: "Quran mobile application ",
     stack: [{ name: "NodeJs" }, { name: "Express" }, { name: "MongoDb" }],
@@ -227,7 +227,7 @@ export const projects = [
   },
   {
     num: "02",
-    category: "Frontend",
+    as: "Frontend Developer",
     title: "Design system",
     description:
       "Collection of reusable components with clearly defined standards for use",
@@ -238,17 +238,84 @@ export const projects = [
   },
   {
     num: "03",
-    category: "FullStack",
+    as: "FullStack Developer",
     title: "SoftyNote",
-    description: "A Notion clone",
+    description: "A Notion clone.",
     stack: [
-      { name: "NodeJs" },
-      { name: "Express" },
+      { name: "React" },
+      { name: "tailwind" },
+      { name: "NestJs" },
       { name: "TypeOrm" },
       { name: "PostgreSQL" },
     ],
     image: "/assets/work/softynote.png",
     live: "https://notes.softylines.com",
+    github: "",
+  },
+  {
+    num: "04",
+    as: "FullStack mobile Developer",
+    title: "Crafty",
+    description:
+      "delightful mobile application that serves as a vibrant marketplace for handmada treasures.",
+    stack: [{ name: "ReactNative" }, { name: "Tailwind" }, { name: "Prisma" }],
+    image: "/assets/work/crafty.png",
+    live: "https://www.behance.net/gallery/184259695/Crafty",
+    github: "",
+  },
+  {
+    num: "05",
+    as: "FullStack Developer",
+    title: "Ixamee",
+    description: "E-learning platform",
+    stack: [{ name: "NextJs" }, { name: "Tailwind" }, { name: "Prisma" }],
+    image: "/assets/work/ixamee.png",
+    live: "https://ixamee.vercel.app/login",
+    github: "",
+  },
+  {
+    num: "06",
+    as: "Backend Developer",
+    title: "DayTask",
+    description: "task managment mobile application",
+    stack: [{ name: "NestJs" }, { name: "TypeOrm" }, { name: "PostgreSQL" }],
+    image: "/assets/work/dayTask.png",
+    live: "",
+    github: "https://github.com/slimani-amine/DayTask-Backend.git",
+  },
+  {
+    num: "07",
+    as: "FullStack Developer",
+    title: "Exclusive",
+    description: "E-commrece web application",
+    stack: [{ name: "NextJs" }, { name: "Tailwind" }, { name: "Prisma" }],
+    image: "/assets/work/exclusive.png",
+    live: "",
+    github: "https://github.com/slimani-amine/E-commerce.git",
+  },
+  {
+    num: "08",
+    as: "Frontend Developer",
+    title: "The Wild Oasis",
+    description: "Hotel managment web application",
+    stack: [{ name: "ReactJs" }, { name: "Tailwind" }, { name: "Supabase" }],
+    image: "/assets/work/the-wild-oasis.png",
+    live: "",
+    github: "https://github.com/slimani-amine/the-wild-oasis.git",
+  },
+  {
+    num: "08",
+    as: "Backend Developer",
+    title: "Bazaar",
+    description: "E-commrece web application",
+    stack: [
+      { name: "NodeJs" },
+      { name: "Express" },
+      { name: "TypeOrm" },
+      { name: "MySQL" },
+    ],
+    image: "/assets/work/bazaar.png",
+    live: "",
     github: "",
   },
 ];

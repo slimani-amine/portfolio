@@ -40,11 +40,18 @@ const Work = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
-              </h2>
-
-              <p className="flex gap-4">{project.description}</p>
+              <div className="leading-tight">
+                <h1 className="text-[42px] font-bold hover:text-accent transition-all duration-500">
+                  {" "}
+                  {project.title}
+                </h1>
+                <h2 className="text-[20px] font-semibold leading-none text-white ">
+                  As a {project.as}
+                </h2>
+              </div>
+              <p className="flex gap-4 text-white/60 text-[16px]">
+                {project.description}
+              </p>
 
               <ul className="flex gap-4">
                 {project?.stack.map((item, index) => (
@@ -86,16 +93,10 @@ const Work = () => {
                   </Link>
                 )}
                 {!project.live && !project.github && (
-                  <TooltipProvider delayDuration={100}>
-                    <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px]  bg-white/5 flex justify-center items-center group">
-                        <MdOutlinePrivateConnectivity className="text-white text-3xl group-hover:text-accent" />
-                      </TooltipTrigger>
-                      <TooltipContent>
-                        <p className=" ">Private project</p>
-                      </TooltipContent>
-                    </Tooltip>
-                  </TooltipProvider>
+                  <div className="flex gap-4">
+                    <MdOutlinePrivateConnectivity className="text-white text-3xl group-hover:text-accent" />
+                    <p className=" ">Private project</p>
+                  </div>
                 )}
               </div>
             </div>
@@ -112,7 +113,12 @@ const Work = () => {
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     <div className="relative w-full h-full ">
-                      <Image src={project.image} fill className="" alt="" />
+                      <Image
+                        src={project.image}
+                        fill
+                        // className="object-cover"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </SwiperSlide>
