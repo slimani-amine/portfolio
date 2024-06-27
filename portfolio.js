@@ -213,3 +213,42 @@ export const skills = {
     },
   ],
 };
+
+export const projects = [
+  {
+    num: "01",
+    category: "Backend",
+    title: "Kotteb",
+    description: "Quran mobile application ",
+    stack: [{ name: "NodeJs" }, { name: "Express" }, { name: "MongoDb" }],
+    image: "/assets/work/kotteb.jpeg",
+    live: "https://play.google.com/store/apps/details?id=com.softylines.kotteb&pcampaignid=web_share",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "Frontend",
+    title: "Design system",
+    description:
+      "Collection of reusable components with clearly defined standards for use",
+    stack: [{ name: "ReactJs" }, { name: "Scss" }],
+    image: "/assets/work/designSystem.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "03",
+    category: "FullStack",
+    title: "SoftyNote",
+    description: "A Notion clone",
+    stack: [
+      { name: "NodeJs" },
+      { name: "Express" },
+      { name: "TypeOrm" },
+      { name: "PostgreSQL" },
+    ],
+    image: "/assets/work/softynote.png",
+    live: "https://notes.softylines.com",
+    github: "",
+  },
+];
