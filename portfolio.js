@@ -304,7 +304,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/the-wild-oasis.git",
   },
   {
-    num: "08",
+    num: "09",
     as: "Backend Developer",
     title: "Bazaar",
     description: "E-commrece web application",
