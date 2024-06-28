@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import { lastUpdate, pageTitle } from "@/portfolio";
+import { Toaster } from "react-hot-toast";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
             Last update : {lastUpdate}
           </div>
         </PageTransition>
+        <Toaster position="bottom-right" />
       </body>
     </html>
   );

@@ -2,11 +2,14 @@ import {
   FaCss3,
   FaDev,
   FaDocker,
+  FaEnvelope,
   FaGithub,
   FaHtml5,
   FaJs,
   FaLinkedinIn,
+  FaMapMarkedAlt,
   FaNodeJs,
+  FaPhoneAlt,
   FaReact,
   FaTwitter,
 } from "react-icons/fa";
@@ -314,8 +317,23 @@ export const projects = [
       { name: "TypeOrm" },
       { name: "MySQL" },
     ],
+
     image: "/assets/work/bazaar.png",
     live: "",
     github: "",
+  },
+];
+
+export const info = [
+  { icon: <FaPhoneAlt />, title: "Phone", description: "(+216) 56 251 081" },
+  {
+    icon: <FaEnvelope />,
+    title: "Email",
+    description: "mohamed.amine.slimani@horizon-tech.tn",
+  },
+  {
+    icon: <FaMapMarkedAlt />,
+    title: "Adress",
+    description: "Sahloul 4, Sousse, Tunisia",
   },
 ];
