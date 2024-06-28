@@ -14,7 +14,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { info } from "@/portfolio";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
+import dynamic from 'next/dynamic';
 
+const Map = dynamic(() => import('@/components/map'), {
+  ssr: false,
+});
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstname: "",
@@ -59,24 +63,42 @@ const Contact = () => {
     return Object.keys(tempErrors).length === 0;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      // handle form submission
-      toast.success("Message submitted. Thank you!", {
-        duration: 4000,
-      });
-      // send form data to server
-      // display success message
-      // clear form inputs
-      setFormData({
-        firstname: "",
-        lastname: "",
-        email: "",
-        phone: "",
-        service: "",
-        description: "",
-      });
+      try {
+        const response = await fetch("/app/contact/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          toast.success("Message submitted. Thank you!", {
+            duration: 4000,
+          });
+          // clear form inputs
+          setFormData({
+            firstname: "",
+            lastname: "",
+            email: "",
+            phone: "",
+            service: "",
+            description: "",
+          });
+        } else {
+          toast.error("Error submitting the form. Please try again.", {
+            duration: 4000,
+          });
+        }
+      } catch (error) {
+        console.log(error);
+        toast.error("Error submitting the form. Please try again.", {
+          duration: 4000,
+        });
+      }
     } else {
       toast.error("Please fill in all required fields.", {
         duration: 4000,
@@ -198,7 +220,8 @@ const Contact = () => {
             </form>
           </div>
           {/* info */}
-          <div className="flex-1 flex items-center xl:justify-center order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="flex-1 flex flex-col gap-10 items-center xl:justify-between mb-8 xl:mb-0">
+          <Map />
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => (
                 <li
@@ -215,6 +238,8 @@ const Contact = () => {
                 </li>
               ))}
             </ul>
+           
+
           </div>
         </div>
       </div>

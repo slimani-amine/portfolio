@@ -337,3 +337,5 @@ export const info = [
     description: "Sahloul 4, Sousse, Tunisia",
   },
 ];
+
+export const position = { lng: 35.8345406, lat: 10.6079261 }
