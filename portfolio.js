@@ -25,14 +25,14 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate = "2024-06-27";
+export const lastUpdate = "2024-07-01";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
   name: "Amine Slimani",
   description:
     "I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies",
-  cvLink: "https://online.publuu.com/560606/1259682",
+  cvLink: "https://online.publuu.com/560606/1279056",
 };
 
 export const socials = [
