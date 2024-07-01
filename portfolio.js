@@ -338,4 +338,4 @@ export const info = [
   },
 ];
 
-export const position = { lng: 35.8345406, lat: 10.6079261 }
+export const position = { lng: 10.6079261, lat: 35.8345406 }

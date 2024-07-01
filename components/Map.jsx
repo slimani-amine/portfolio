@@ -10,7 +10,7 @@ const Map = () => {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const center = position;
-  const [zoom] = useState(10);
+  const [zoom] = useState(12);
 
   useEffect(() => {
     if (map.current) return; 
