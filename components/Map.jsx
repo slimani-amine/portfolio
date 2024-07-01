@@ -10,7 +10,7 @@ const Map = () => {
   const mapContainer = useRef(null);
   const map = useRef(null);
   const center = position;
-  const [zoom] = useState(12);
+  const [zoom] = useState(10);
 
   useEffect(() => {
     if (map.current) return; 
@@ -25,6 +25,7 @@ const Map = () => {
     }).addTo(map.current);
 
   }, [center.lng, center.lat, zoom]);
+    console.log("🚀 ~ useEffect ~ mapContainer:", mapContainer)
 
   return (
     <div className="mapWrap">

@@ -16,8 +16,8 @@ import { motion } from "framer-motion";
 import toast from "react-hot-toast";
 import dynamic from 'next/dynamic';
 
-const Map = dynamic(() => import('@/components/map'), {
-  ssr: false,
+const Map = dynamic(() => import('../../components/Map'), {
+  ssr: true,
 });
 const Contact = () => {
   const [formData, setFormData] = useState({
