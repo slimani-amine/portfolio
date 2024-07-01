@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -19,6 +20,7 @@ import dynamic from "next/dynamic";
 const Map = dynamic(() => import("../../components/Map"), {
   ssr: false,
 });
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstname: "",
@@ -67,22 +69,16 @@ const Contact = () => {
     e.preventDefault();
     if (validate()) {
       const body = {
-        email: "slimaniamin76@gmail.com",
-        subject: "Contact from your portfolio",
-        message: `From ${formData.firstname || "First Name"} ${
-          formData.lastname || "Last Name"
-        },
-    Here are the details we have received:
-    - Email: ${formData.email || "Not Provided"}
-    - Phone: ${formData.phone || "Not Provided"}
-    - Service: ${formData.service || "Not Specified"}
-    - Description: ${formData.description || "No Description Provided"}
-    
-  `,
+        email: formData.email,
+        subject: "Job offer",
+        name: `${formData.firstname} ${formData.lastname}`,
+        phone: formData.phone,
+        service: formData.service,
+        details: formData.description,
       };
       try {
         const response = await fetch(
-          "http://localhost:5099/api/v1/auth/send-email",
+          "https://quranapi.lissene.dev/api/v1/auth/send-email-verification",
           {
             method: "POST",
             headers: {
@@ -96,7 +92,7 @@ const Contact = () => {
           toast.success("Message submitted. Thank you!", {
             duration: 4000,
           });
-          // clear form inputs
+          // Clear form inputs
           setFormData({
             firstname: "",
             lastname: "",
@@ -134,7 +130,7 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
-          {/* form */}
+          {/* Form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
             <form
               className="flex flex-col gap-6 p-10 bg-[#23232c] rounded-xl"
@@ -149,7 +145,7 @@ const Contact = () => {
                   <Input
                     type="text"
                     name="firstname"
-                    placeholder="FirstName"
+                    placeholder="First Name"
                     value={formData.firstname}
                     onChange={handleChange}
                   />
@@ -161,7 +157,7 @@ const Contact = () => {
                   <Input
                     type="text"
                     name="lastname"
-                    placeholder="LastName"
+                    placeholder="Last Name"
                     value={formData.lastname}
                     onChange={handleChange}
                   />
@@ -202,14 +198,14 @@ const Contact = () => {
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup className="capitalize">
-                      <SelectItem value="Frontend web development">
-                        Frontend web development
+                      <SelectItem value="frontend">
+                        Frontend Web Development
                       </SelectItem>
-                      <SelectItem value="Backend web development">
-                        Backend web development
+                      <SelectItem value="backend">
+                        Backend Web Development
                       </SelectItem>
-                      <SelectItem value="FullStack web development">
-                        FullStack web development
+                      <SelectItem value="fullstack">
+                        FullStack Web Development
                       </SelectItem>
                     </SelectGroup>
                   </SelectContent>
@@ -221,7 +217,7 @@ const Contact = () => {
               <div>
                 <Textarea
                   className="h-[200px]"
-                  placeholder="Type your text here"
+                  placeholder="Type your message here"
                   name="description"
                   value={formData.description}
                   onChange={handleChange}
@@ -232,11 +228,11 @@ const Contact = () => {
               </div>
 
               <Button size="lg" className="max-w-40" type="submit">
-                Send message
+                Send Message
               </Button>
             </form>
           </div>
-          {/* info */}
+          {/* Info */}
           <div className="flex-1 flex flex-col gap-10 items-center xl:justify-between mb-8 xl:mb-0">
             <Map />
             <ul className="flex flex-col gap-10">
