@@ -14,10 +14,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { info } from "@/portfolio";
 import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import dynamic from 'next/dynamic';
+import dynamic from "next/dynamic";
 
-const Map = dynamic(() => import('../../components/Map'), {
-  ssr: true,
+const Map = dynamic(() => import("../../components/Map"), {
+  ssr: false,
 });
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -66,14 +66,31 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
+      const body = {
+        email: "slimaniamin76@gmail.com",
+        subject: "Contact from your portfolio",
+        message: `From ${formData.firstname || "First Name"} ${
+          formData.lastname || "Last Name"
+        },
+    Here are the details we have received:
+    - Email: ${formData.email || "Not Provided"}
+    - Phone: ${formData.phone || "Not Provided"}
+    - Service: ${formData.service || "Not Specified"}
+    - Description: ${formData.description || "No Description Provided"}
+    
+  `,
+      };
       try {
-        const response = await fetch("/app/contact/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+        const response = await fetch(
+          "http://localhost:5099/api/v1/auth/send-email",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(body),
+          }
+        );
 
         if (response.ok) {
           toast.success("Message submitted. Thank you!", {
@@ -221,7 +238,7 @@ const Contact = () => {
           </div>
           {/* info */}
           <div className="flex-1 flex flex-col gap-10 items-center xl:justify-between mb-8 xl:mb-0">
-          <Map />
+            <Map />
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => (
                 <li
@@ -238,8 +255,6 @@ const Contact = () => {
                 </li>
               ))}
             </ul>
-           
-
           </div>
         </div>
       </div>

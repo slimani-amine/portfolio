@@ -25,7 +25,6 @@ const Map = () => {
     }).addTo(map.current);
 
   }, [center.lng, center.lat, zoom]);
-    console.log("🚀 ~ useEffect ~ mapContainer:", mapContainer)
 
   return (
     <div className="mapWrap">
