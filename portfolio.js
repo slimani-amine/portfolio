@@ -4,6 +4,7 @@ import {
   FaDocker,
   FaEnvelope,
   FaGithub,
+  FaGitlab,
   FaHtml5,
   FaJs,
   FaLinkedinIn,
@@ -37,6 +38,7 @@ export const homeInformation = {
 
 export const socials = [
   { icon: <FaGithub />, path: "https://github.com/slimani-amine" },
+  { icon: <FaGitlab />, path: "https://gitlab.com/Amine-Slimani" },
   { icon: <FaTwitter />, path: "https://x.com/SlimaniA10996" },
   { icon: <FaDev />, path: "https://dev.to/med_amine_slimani" },
   {
@@ -338,4 +340,4 @@ export const info = [
   },
 ];
 
-export const position = { lng: 10.6079261, lat: 35.8345406 }
+export const position = { lng: 10.6079261, lat: 35.8345406 };
