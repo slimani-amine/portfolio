@@ -33,6 +33,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
                 onClick={handleDownloadCV}
+                name="download"
               >
                 <span>Download CV </span>
                 <FiDownload className="text-xl" />

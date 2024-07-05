@@ -11,6 +11,7 @@ const Social = ({ containerStyle, iconStyles }) => {
           className={iconStyles}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={social.name}
         >
           {social.icon}
         </a>

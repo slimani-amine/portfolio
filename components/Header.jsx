@@ -10,7 +10,7 @@ const Header = () => {
     <header className="py-8 xl:py-12 text-white">
       <div className="container mx-auto flex justify-between items-center ">
         {/* logo */}
-        <Link href={"/"}>
+        <Link href={"/"} aria-label="Home">
           <h1 className="text-4xl font-semibold">
             Amine<span className="text-accent ">.</span>
           </h1>
@@ -19,8 +19,8 @@ const Header = () => {
         {/* Desktop Nav */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href={"/contact"}>
-            <Button>Hire me</Button>
+          <Link href={"/contact"} aria-label="Contact">
+            <Button name="hire">Hire me</Button>
           </Link>
         </div>
 
