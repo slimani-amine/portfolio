@@ -26,7 +26,7 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate = "2024-07-01";
+export const lastUpdate = "2024-07-16";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
@@ -51,7 +51,7 @@ export const stats = [
   { num: 14, text: "Months of experience" },
   { num: 27, text: "Prejects completed" },
   { num: 12, text: "Technologies mastered" },
-  { num: 798, text: "Github Total Contributions" },
+  { num: 1000, text: "Github Total Contributions" },
 ];
 
 export const services = [
@@ -222,6 +222,16 @@ export const skills = {
 export const projects = [
   {
     num: "01",
+    as: "Frontend Developer",
+    title: "Boumiza square",
+    description: "Mall landing page ",
+    stack: [{ name: "NextJs" }, { name: "Tailwind" }, { name: "Strapi" }],
+    image: "/assets/work/boumiza.png",
+    live: "https://dev.boumiza.lissene.dev",
+    github: "",
+  },
+  {
+    num: "02",
     as: "Backend Developer",
     title: "Kotteb",
     description: "Quran mobile application ",
@@ -231,7 +241,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "02",
+    num: "03",
     as: "Frontend Developer",
     title: "Design system",
     description:
@@ -242,7 +252,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "03",
+    num: "04",
     as: "FullStack Developer",
     title: "SoftyNote",
     description: "A Notion clone.",
@@ -258,7 +268,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "04",
+    num: "05",
     as: "FullStack mobile Developer",
     title: "Crafty",
     description:
@@ -269,7 +279,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "05",
+    num: "06",
     as: "FullStack Developer",
     title: "Ixamee",
     description: "E-learning platform",
@@ -279,7 +289,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "07",
     as: "Backend Developer",
     title: "DayTask",
     description: "task managment mobile application",
@@ -289,7 +299,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/DayTask-Backend.git",
   },
   {
-    num: "07",
+    num: "08",
     as: "FullStack Developer",
     title: "Exclusive",
     description: "E-commrece web application",
@@ -299,7 +309,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/E-commerce.git",
   },
   {
-    num: "08",
+    num: "09",
     as: "Frontend Developer",
     title: "The Wild Oasis",
     description: "Hotel managment web application",
@@ -309,7 +319,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/the-wild-oasis.git",
   },
   {
-    num: "09",
+    num: "10",
     as: "Backend Developer",
     title: "Bazaar",
     description: "E-commrece web application",
