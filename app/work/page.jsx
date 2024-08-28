@@ -20,8 +20,8 @@ const Work = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handlSlideChange = (swiper) => {
-    const curreentIndex = swiper.activeIndex;
-    setProject(projects[curreentIndex]);
+    const currentIndex = swiper.activeIndex;
+    setProject(projects[currentIndex]);
   };
 
   return (
@@ -42,7 +42,6 @@ const Work = () => {
               </div>
               <div className="leading-tight">
                 <h1 className="text-[42px] font-bold hover:text-accent transition-all duration-500">
-                  {" "}
                   {project.title}
                 </h1>
                 <h2 className="text-[20px] font-semibold leading-none text-white ">
@@ -110,14 +109,16 @@ const Work = () => {
             >
               {projects.map((item, index) => (
                 <SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <div className="h-full relative group flex justify-center items-center bg-transparent">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                     <div className="relative w-full h-full ">
                       <Image
-                        src={project.image}
+                        src={item.image}
                         fill
-                        className="object-cover"
-                        alt=""
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-contain"
+                        alt={item.title}
+                        priority
                       />
                     </div>
                   </div>
