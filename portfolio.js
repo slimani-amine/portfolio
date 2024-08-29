@@ -49,7 +49,7 @@ export const socials = [
 
 export const stats = [
   { num: 20, text: "Months of experience" },
-  { num: 27, text: "Prejects completed" },
+  { num: 11, text: "Prejects completed" },
   { num: 12, text: "Technologies mastered" },
   { num: 1130, text: "Github Total Contributions" },
 ];
