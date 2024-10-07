@@ -225,7 +225,7 @@ export const projects = [
     as: "FullStack Developer",
     title: "TakiAcademy recruitment",
     description:
-      "TakiAcademy, an e-learning platform, I developed the recruitment features to streamline job application and management processes. I designed and implemented a user-friendly interface for job seekers to apply directly through the platform. On the administrative side, I created a robust dashboard that allows departments to easily manage job offers, track applications, and oversee the entire recruitment workflow. This feature enhanced both user experience and administrative efficiency, supporting the platform's growth and scalability.",
+      "TakiAcademy, I developed recruitment features for the e-learning platform, including a user-friendly job application interface and an admin dashboard for managing job offers and applications. This streamlined the recruitment process and improved efficiency for both applicants and administrators.",
     stack: [
       { name: "React.js" },
       { name: "MUI" },
@@ -242,7 +242,11 @@ export const projects = [
     title: "Xora",
     description:
       "Xora is a smart workflow automation platform that boosts productivity with AI-powered video editing, seamless team collaboration, and strong data security. It offers scalable plans, advanced analytics, and 24/7 support, making it ideal for content creators and teams to streamline their work efficiently.",
-    stack: [{ name: "React.js" }, { name: "Tailwind" }, { name: "Framer Motion" }],
+    stack: [
+      { name: "React.js" },
+      { name: "Tailwind" },
+      { name: "Framer Motion" },
+    ],
     image: "/assets/work/xora.png",
     live: "https://xora-eight.vercel.app",
     github: "https://github.com/slimani-amine/xora.git",
