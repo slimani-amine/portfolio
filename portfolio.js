@@ -26,7 +26,7 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate = "2024-08-28";
+export const lastUpdate = "2024-10-07";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
@@ -48,10 +48,10 @@ export const socials = [
 ];
 
 export const stats = [
-  { num: 20, text: "Months of experience" },
+  { num: 21, text: "Months of experience" },
   { num: 11, text: "Prejects completed" },
   { num: 12, text: "Technologies mastered" },
-  { num: 1130, text: "Github Total Contributions" },
+  { num: 1190, text: "Github Total Contributions" },
 ];
 
 export const services = [
@@ -222,6 +222,33 @@ export const skills = {
 export const projects = [
   {
     num: "01",
+    as: "FullStack Developer",
+    title: "TakiAcademy recruitment",
+    description:
+      "TakiAcademy, an e-learning platform, I developed the recruitment features to streamline job application and management processes. I designed and implemented a user-friendly interface for job seekers to apply directly through the platform. On the administrative side, I created a robust dashboard that allows departments to easily manage job offers, track applications, and oversee the entire recruitment workflow. This feature enhanced both user experience and administrative efficiency, supporting the platform's growth and scalability.",
+    stack: [
+      { name: "React.js" },
+      { name: "MUI" },
+      { name: "NodeJs" },
+      { name: "Express" },
+    ],
+    image: "/assets/work/taki-recruitment.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02",
+    as: "Frontend Developer",
+    title: "Xora",
+    description:
+      "Xora is a smart workflow automation platform that boosts productivity with AI-powered video editing, seamless team collaboration, and strong data security. It offers scalable plans, advanced analytics, and 24/7 support, making it ideal for content creators and teams to streamline their work efficiently.",
+    stack: [{ name: "React.js" }, { name: "Tailwind" }, { name: "Framer Motion" }],
+    image: "/assets/work/xora.png",
+    live: "https://xora-eight.vercel.app",
+    github: "https://github.com/slimani-amine/xora.git",
+  },
+  {
+    num: "03",
     as: "Frontend Developer",
     title: "Boumiza square",
     description: "Mall landing page ",
@@ -231,7 +258,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "02",
+    num: "04",
     as: "Frontend Developer",
     title: "The 716",
     description: "A coffee landing page ",
@@ -241,7 +268,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "03",
+    num: "05",
     as: "Backend Developer",
     title: "Kotteb",
     description: "Quran mobile application ",
@@ -251,7 +278,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "04",
+    num: "06",
     as: "Frontend Developer",
     title: "Design system",
     description:
@@ -262,7 +289,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "05",
+    num: "07",
     as: "FullStack Developer",
     title: "SoftyNote",
     description: "A Notion clone.",
@@ -278,7 +305,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "08",
     as: "FullStack mobile Developer",
     title: "Crafty",
     description:
@@ -289,7 +316,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "07",
+    num: "09",
     as: "FullStack Developer",
     title: "Ixamee",
     description: "E-learning platform",
@@ -299,7 +326,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "10",
     as: "Backend Developer",
     title: "DayTask",
     description: "task managment mobile application",
@@ -309,7 +336,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/DayTask-Backend.git",
   },
   {
-    num: "09",
+    num: "11",
     as: "FullStack Developer",
     title: "Exclusive",
     description: "E-commrece web application",
@@ -319,7 +346,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/E-commerce.git",
   },
   {
-    num: "10",
+    num: "12",
     as: "Frontend Developer",
     title: "The Wild Oasis",
     description: "Hotel managment web application",
@@ -329,7 +356,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/the-wild-oasis.git",
   },
   {
-    num: "11",
+    num: "13",
     as: "Backend Developer",
     title: "Bazaar",
     description: "E-commrece web application",
