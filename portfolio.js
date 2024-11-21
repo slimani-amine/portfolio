@@ -26,14 +26,14 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate = "2024-10-07";
+export const lastUpdate = "2024-11-21";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
   name: "Amine Slimani",
   description:
     "I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies",
-  cvLink: "https://online.publuu.com/560606/1279056",
+  cvLink: "https://publuu.com/flip-book/724956/1609037",
 };
 
 export const socials = [
@@ -51,7 +51,7 @@ export const stats = [
   { num: 21, text: "Months of experience" },
   { num: 11, text: "Prejects completed" },
   { num: 12, text: "Technologies mastered" },
-  { num: 1190, text: "Github Total Contributions" },
+  { num: 1413, text: "Github Total Contributions" },
 ];
 
 export const services = [
@@ -264,11 +264,11 @@ export const projects = [
   {
     num: "04",
     as: "Frontend Developer",
-    title: "The 716",
+    title: "The 21",
     description: "A coffee landing page ",
     stack: [{ name: "reactJs" }, { name: "Tailwind" }],
-    image: "/assets/work/the716.png",
-    live: "https://the716.vercel.app",
+    image: "/assets/work/the21.png",
+    live: "https://the21.vercel.app/",
     github: "",
   },
   {
@@ -278,7 +278,7 @@ export const projects = [
     description: "Quran mobile application ",
     stack: [{ name: "NodeJs" }, { name: "Express" }, { name: "MongoDb" }],
     image: "/assets/work/kotteb.jpeg",
-    live: "https://play.google.com/store/apps/details?id=com.softylines.kotteb&pcampaignid=web_share",
+    live: "https://kotteb.com/",
     github: "",
   },
   {
