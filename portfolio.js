@@ -12,8 +12,9 @@ import {
   FaNodeJs,
   FaPhoneAlt,
   FaReact,
-  FaTwitter,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
 import {
   SiExpress,
   SiMongodb,
@@ -39,7 +40,7 @@ export const homeInformation = {
 export const socials = [
   { icon: <FaGithub />, path: "https://github.com/slimani-amine" },
   { icon: <FaGitlab />, path: "https://gitlab.com/Amine-Slimani" },
-  { icon: <FaTwitter />, path: "https://x.com/SlimaniA10996" },
+  { icon: <FaXTwitter />, path: "https://x.com/SlimaniA10996" },
   { icon: <FaDev />, path: "https://dev.to/med_amine_slimani" },
   {
     icon: <FaLinkedinIn />,
@@ -49,8 +50,8 @@ export const socials = [
 
 export const stats = [
   { num: 21, text: "Months of experience" },
-  { num: 11, text: "Prejects completed" },
-  { num: 12, text: "Technologies mastered" },
+  { num: 13, text: "Prejects completed" },
+  { num: 10, text: "Technologies mastered" },
   { num: 1413, text: "Github Total Contributions" },
 ];
 
@@ -255,7 +256,8 @@ export const projects = [
     num: "03",
     as: "Frontend Developer",
     title: "Boumiza square",
-    description: "Mall landing page ",
+    description:
+      "A modern and functional website for Boumiza Square, highlighting its services and vibrant community atmosphere. The site includes sections like Home, About, Services, Gallery, and Contact, providing a user-friendly platform to engage visitors, showcase offerings, and enhance its digital reach.",
     stack: [{ name: "NextJs" }, { name: "Tailwind" }, { name: "Strapi" }],
     image: "/assets/work/boumiza.png",
     live: "https://www.boumizasquare.com",
@@ -265,7 +267,8 @@ export const projects = [
     num: "04",
     as: "Frontend Developer",
     title: "The 21",
-    description: "A coffee landing page ",
+    description:
+      "A sleek and engaging website for The21 Coffee, featuring sections like Home, About, Menu, Team, Gallery, and Contact. The site captures the café's unique vibe, enhances its online presence, and serves as a 24/7 tool for connecting with customers and growing its audience.",
     stack: [{ name: "reactJs" }, { name: "Tailwind" }],
     image: "/assets/work/the21.png",
     live: "https://the21.vercel.app/",
@@ -275,7 +278,8 @@ export const projects = [
     num: "05",
     as: "Backend Developer",
     title: "Kotteb",
-    description: "Quran mobile application ",
+    description:
+      "I contributed as a backend developer for Kotteb, a Quran app designed for seamless and enriching user experiences. Additionally, I created the app's landing page, highlighting its features and ensuring a visually appealing and informative platform to attract and engage users.",
     stack: [{ name: "NodeJs" }, { name: "Express" }, { name: "MongoDb" }],
     image: "/assets/work/kotteb.jpeg",
     live: "https://kotteb.com/",
@@ -286,7 +290,7 @@ export const projects = [
     as: "Frontend Developer",
     title: "Design system",
     description:
-      "Collection of reusable components with clearly defined standards for use",
+      "I developed a comprehensive **Design System** to ensure consistency, scalability, and efficiency across projects. This system includes reusable components, standardized typography, color palettes, and documentation, empowering teams to create cohesive user interfaces while streamlining the design and development process.",
     stack: [{ name: "ReactJs" }, { name: "Scss" }],
     image: "/assets/work/designSystem.png",
     live: "",
@@ -296,7 +300,8 @@ export const projects = [
     num: "07",
     as: "FullStack Developer",
     title: "SoftyNote",
-    description: "A Notion clone.",
+    description:
+      "A Notion clone, focusing on building a responsive front-end with React and a scalable back-end using Node.js and Express. I implemented key features like note-taking, task management, and real-time collaboration, ensuring a seamless user experience and robust performance.",
     stack: [
       { name: "React" },
       { name: "tailwind" },
@@ -313,7 +318,7 @@ export const projects = [
     as: "FullStack mobile Developer",
     title: "Crafty",
     description:
-      "delightful mobile application that serves as a vibrant marketplace for handmada treasures.",
+      "As a full-stack developer and Scrum Master, I led a team of four in developing Delightful, a vibrant mobile marketplace for handmade treasures, as my graduation project. I worked on both the front-end and back-end, ensuring a seamless user experience with features like product listings, secure payments, and real-time updates. As Scrum Master, I facilitated team collaboration and agile workflows to deliver the project on time.",
     stack: [{ name: "ReactNative" }, { name: "Tailwind" }, { name: "Prisma" }],
     image: "/assets/work/crafty.png",
     live: "https://www.behance.net/gallery/184259695/Crafty",
@@ -323,7 +328,8 @@ export const projects = [
     num: "09",
     as: "FullStack Developer",
     title: "Ixamee",
-    description: "E-learning platform",
+    description:
+      "E-learning platform, working on both the front-end and back-end. I built a user-friendly interface with NextJs and implemented a scalable backend with Prisma. Key features included course management, user authentication, and real-time progress tracking, ensuring a seamless and engaging learning experience.",
     stack: [{ name: "NextJs" }, { name: "Tailwind" }, { name: "Prisma" }],
     image: "/assets/work/ixamee.png",
     live: "https://ixamee.vercel.app/login",
@@ -333,7 +339,8 @@ export const projects = [
     num: "10",
     as: "Backend Developer",
     title: "DayTask",
-    description: "task managment mobile application",
+    description:
+      "task managment mobile application using NestJS, focusing on building scalable and efficient APIs. I implemented features such as task creation, user authentication, and real-time updates.",
     stack: [{ name: "NestJs" }, { name: "TypeOrm" }, { name: "PostgreSQL" }],
     image: "/assets/work/dayTask.png",
     live: "",
@@ -343,7 +350,8 @@ export const projects = [
     num: "11",
     as: "FullStack Developer",
     title: "Exclusive",
-    description: "E-commrece web application",
+    description:
+      "An e-commerce web application, building both the front-end and back-end. I utilized React for a responsive user interface and Node.js with Express for a robust back-end, implementing features like product management, user authentication, and secure payment integration to provide a seamless shopping experience.",
     stack: [{ name: "NextJs" }, { name: "Tailwind" }, { name: "Prisma" }],
     image: "/assets/work/exclusive.png",
     live: "",
@@ -353,7 +361,8 @@ export const projects = [
     num: "12",
     as: "Frontend Developer",
     title: "The Wild Oasis",
-    description: "Hotel managment web application",
+    description:
+      "Hotel managment web application, handling both front-end and back-end development. Using React for a user-friendly interface and Node.js with Express for the back-end, I implemented features like booking management, room availability tracking, and payment integration, ensuring an efficient and smooth experience for both hotel staff and guests.",
     stack: [{ name: "ReactJs" }, { name: "Tailwind" }, { name: "Supabase" }],
     image: "/assets/work/the-wild-oasis.png",
     live: "",
@@ -363,7 +372,8 @@ export const projects = [
     num: "13",
     as: "Backend Developer",
     title: "Bazaar",
-    description: "E-commrece web application",
+    description:
+      "E-commrece web application, building both the front-end and back-end. I utilized React for a responsive user interface and Node.js with Express for a robust back-end, implementing features like product management, user authentication, and secure payment integration to provide a seamless shopping experience.",
     stack: [
       { name: "NodeJs" },
       { name: "Express" },

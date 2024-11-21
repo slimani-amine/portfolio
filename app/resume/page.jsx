@@ -38,14 +38,14 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-full text-white/60 mx-auto xl:mx-0 ">
+                <p className="max-w-full text-white/60 mx-auto xl:mx-0 text-justify">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 gap-y-4 max-w-full mx-auto xl:mx-0">
                   {about.info.map((item, index) => (
                     <li
                       key={index}
-                      className="flex items-center justify-center xl:justify-start gap-4 "
+                      className="flex items-center xl:justify-start gap-4 "
                     >
                       <span className=" text-white/60">{item.fieldName}:</span>
                       <span className="text-lg ">{item.fieldValue}</span>
@@ -57,7 +57,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold"> {experience.title}</h3>
-                <p className="max-w-full text-white/60 mmx-auto xl:mx-0">
+                <p className="max-w-full text-white/60 mx-auto xl:mx-0 text-justify">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -85,7 +85,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold"> {education.title}</h3>
-                <p className="max-w-full text-white/60 mmx-auto xl:mx-0">
+                <p className="max-w-full text-white/60 mmx-auto xl:mx-0 text-justify">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -114,7 +114,7 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-full text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-full text-white/60 mx-auto xl:mx-0 text-justify">
                     {skills.description}
                   </p>
                 </div>
