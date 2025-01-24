@@ -15,13 +15,53 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
+import { IoClose } from "react-icons/io5";
+import { BiZoomIn } from "react-icons/bi";
+
+const BrowserFrame = ({ children, url, name }) => (
+  <div className="w-full h-full rounded-2xl overflow-hidden bg-[#1B1B1B] shadow-2xl">
+    {/* Browser Header */}
+    <div
+      className={`h-8 bg-[#2A2A2A] flex items-center px-4 gap-2 ${
+        url ? "cursor-pointer hover:bg-[#3A3A3A] transition-colors" : ""
+      }`}
+      onClick={() => url && window.open(url, "_blank")}
+    >
+      <div className="flex gap-1.5">
+        <div className="w-3 h-3 rounded-full bg-[#FF5F57]"></div>
+        <div className="w-3 h-3 rounded-full bg-[#FEBC2E]"></div>
+        <div className="w-3 h-3 rounded-full bg-[#28C840]"></div>
+      </div>
+      <div className="flex-1 flex justify-center">
+        <div className="bg-[#1B1B1B] rounded-md px-20 py-1 text-xs text-white/50 truncate">
+          {url || (name && `${name} preview`) || "project preview"}
+        </div>
+      </div>
+    </div>
+    {/* Browser Content */}
+    <div className="w-full h-[calc(100%-2rem)]">{children}</div>
+  </div>
+);
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
+  const [isImageOpen, setIsImageOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const handlSlideChange = (swiper) => {
     const currentIndex = swiper.activeIndex;
     setProject(projects[currentIndex]);
+  };
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+    setIsImageOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const handleCloseModal = () => {
+    setIsImageOpen(false);
+    document.body.style.overflow = "unset";
   };
 
   return (
@@ -104,22 +144,33 @@ const Work = () => {
             <Swiper
               spaceBetween={20}
               slidesPerView={1}
-              className="h-[300px] md:h-[400px] xl:h-[520px] mb-8 md:mb-12"
+              className="aspect-[4/3] mb-8 md:mb-12"
               onSlideChange={handlSlideChange}
             >
               {projects.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <div className="h-full relative group flex justify-center items-center bg-transparent">
-                    <div className="absolute top-0 bottom-0 w-full h-full  z-10"></div>
-                    <Image
-                      src={item.image}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-contain"
-                      alt={item.title}
-                      priority
-                    />
-                  </div>
+                  <BrowserFrame url={item.live} name={item.title}>
+                    <div
+                      className="relative w-full h-full group flex justify-center items-center bg-transparent cursor-pointer"
+                      onClick={() => handleImageClick(item.image)}
+                    >
+                      <div className="absolute top-0 bottom-0 w-full h-full z-10 bg-black/0 group-hover:bg-black/40 transition-all duration-300">
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <BiZoomIn className="text-white text-4xl" />
+                        </div>
+                      </div>
+                      <div className="relative w-full h-full flex items-center justify-center">
+                        <Image
+                          src={item.image}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover"
+                          alt={item.title}
+                          priority
+                        />
+                      </div>
+                    </div>
+                  </BrowserFrame>
                 </SwiperSlide>
               ))}
               <WorkSliderBtns
@@ -130,6 +181,34 @@ const Work = () => {
           </div>
         </div>
       </div>
+
+      {isImageOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={handleCloseModal}
+        >
+          <button
+            onClick={handleCloseModal}
+            className="absolute top-4 right-4 text-white hover:text-accent z-50"
+          >
+            <IoClose size={30} />
+          </button>
+          <div
+            className="relative w-[90vw] h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <BrowserFrame url={project.live} name={project.title}>
+              <Image
+                src={selectedImage}
+                fill
+                className="object-cover"
+                alt="Project preview"
+                priority
+              />
+            </BrowserFrame>
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 };

@@ -27,7 +27,7 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate = "2024-11-21";
+export const lastUpdate = "2025-01-24";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
@@ -50,9 +50,9 @@ export const socials = [
 
 export const stats = [
   { num: 21, text: "Months of experience" },
-  { num: 13, text: "Prejects completed" },
+  { num: 14, text: "Projects completed" },
   { num: 10, text: "Technologies mastered" },
-  { num: 1413, text: "Github Total Contributions" },
+  { num: 1456, text: "Github Total Contributions" },
 ];
 
 export const services = [
@@ -224,6 +224,22 @@ export const projects = [
   {
     num: "01",
     as: "FullStack Developer",
+    title: "Kotteb Tab",
+    description:
+      "Kotteb Tab is an innovative Chrome extension that transforms your new tab experience with beautiful Quranic verses and Islamic content. This extension seamlessly integrates daily verses, translations, and spiritual reminders into your browsing routine, creating a meaningful and peaceful browsing experience.",
+    stack: [
+      { name: "Nextjs" },
+      { name: "Tailwind" },
+      { name: "NodeJs" },
+      { name: "Express" },
+    ],
+    image: "/assets/work/KottebTab.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02",
+    as: "FullStack Developer",
     title: "TakiAcademy recruitment",
     description:
       "TakiAcademy, I developed recruitment features for the e-learning platform, including a user-friendly job application interface and an admin dashboard for managing job offers and applications. This streamlined the recruitment process and improved efficiency for both applicants and administrators.",
@@ -238,7 +254,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "02",
+    num: "03",
     as: "Frontend Developer",
     title: "Xora",
     description:
@@ -253,7 +269,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/xora.git",
   },
   {
-    num: "03",
+    num: "04",
     as: "Frontend Developer",
     title: "Boumiza square",
     description:
@@ -264,7 +280,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "04",
+    num: "05",
     as: "Frontend Developer",
     title: "The 21",
     description:
@@ -275,7 +291,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "05",
+    num: "06",
     as: "Backend Developer",
     title: "Kotteb",
     description:
@@ -286,7 +302,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "07",
     as: "Frontend Developer",
     title: "Design system",
     description:
@@ -297,7 +313,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "07",
+    num: "08",
     as: "FullStack Developer",
     title: "SoftyNote",
     description:
@@ -314,7 +330,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "09",
     as: "FullStack mobile Developer",
     title: "Crafty",
     description:
@@ -325,7 +341,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "09",
+    num: "10",
     as: "FullStack Developer",
     title: "Ixamee",
     description:
@@ -336,7 +352,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "10",
+    num: "11",
     as: "Backend Developer",
     title: "DayTask",
     description:
@@ -347,7 +363,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/DayTask-Backend.git",
   },
   {
-    num: "11",
+    num: "12",
     as: "FullStack Developer",
     title: "Exclusive",
     description:
@@ -358,7 +374,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/E-commerce.git",
   },
   {
-    num: "12",
+    num: "13",
     as: "Frontend Developer",
     title: "The Wild Oasis",
     description:
@@ -369,7 +385,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/the-wild-oasis.git",
   },
   {
-    num: "13",
+    num: "14",
     as: "Backend Developer",
     title: "Bazaar",
     description:
