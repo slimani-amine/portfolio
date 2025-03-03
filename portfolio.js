@@ -4,7 +4,7 @@ import {
   FaDocker,
   FaEnvelope,
   FaGithub,
-  FaGitlab,
+  // FaGitlab,
   FaHtml5,
   FaJs,
   FaLinkedinIn,
@@ -27,7 +27,7 @@ import {
 
 export const pageTitle = "Amine.";
 
-export const lastUpdate = "2025-01-24";
+export const lastUpdate = "2025-03-03";
 
 export const homeInformation = {
   jobTitle: "Software Developer",
@@ -39,7 +39,7 @@ export const homeInformation = {
 
 export const socials = [
   { icon: <FaGithub />, path: "https://github.com/slimani-amine" },
-  { icon: <FaGitlab />, path: "https://gitlab.com/Amine-Slimani" },
+  // { icon: <FaGitlab />, path: "https://gitlab.com/Amine-Slimani" },
   { icon: <FaXTwitter />, path: "https://x.com/SlimaniA10996" },
   { icon: <FaDev />, path: "https://dev.to/med_amine_slimani" },
   {
@@ -52,7 +52,7 @@ export const stats = [
   { num: 21, text: "Months of experience" },
   { num: 14, text: "Projects completed" },
   { num: 10, text: "Technologies mastered" },
-  { num: 1456, text: "Github Total Contributions" },
+  { num: 1550, text: "Github Total Contributions" },
 ];
 
 export const services = [
@@ -234,7 +234,7 @@ export const projects = [
       { name: "Express" },
     ],
     image: "/assets/work/KottebTab.png",
-    live: "",
+    live: "https://chromewebstore.google.com/detail/kotteb-tab/dihopalpgofnpkfcldhehcgglegiideg",
     github: "",
   },
   {
@@ -256,6 +256,17 @@ export const projects = [
   {
     num: "03",
     as: "Frontend Developer",
+    title: "WanderLuxe",
+    description:
+      "A modern and interactive travel booking website built with React and Vite, featuring smooth animations, destination browsing, and a seamless booking experience.",
+    stack: [{ name: "React" }, { name: "Tailwind" }],
+    image: "/assets/work/wanderLuxe.png",
+    live: "https://wander-luxe.vercel.app/",
+    github: "https://github.com/slimani-amine/wanderLuxe.git",
+  },
+  {
+    num: "04",
+    as: "Frontend Developer",
     title: "Xora",
     description:
       "Xora is a smart workflow automation platform that boosts productivity with AI-powered video editing, seamless team collaboration, and strong data security. It offers scalable plans, advanced analytics, and 24/7 support, making it ideal for content creators and teams to streamline their work efficiently.",
@@ -269,7 +280,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/xora.git",
   },
   {
-    num: "04",
+    num: "05",
     as: "Frontend Developer",
     title: "Boumiza square",
     description:
@@ -280,7 +291,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "05",
+    num: "06",
     as: "Frontend Developer",
     title: "The 21",
     description:
@@ -291,7 +302,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "06",
+    num: "07",
     as: "Backend Developer",
     title: "Kotteb",
     description:
@@ -302,7 +313,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "07",
+    num: "08",
     as: "Frontend Developer",
     title: "Design system",
     description:
@@ -313,7 +324,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "08",
+    num: "09",
     as: "FullStack Developer",
     title: "SoftyNote",
     description:
@@ -330,7 +341,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "09",
+    num: "10",
     as: "FullStack mobile Developer",
     title: "Crafty",
     description:
@@ -341,7 +352,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "10",
+    num: "11",
     as: "FullStack Developer",
     title: "Ixamee",
     description:
@@ -352,7 +363,7 @@ export const projects = [
     github: "",
   },
   {
-    num: "11",
+    num: "12",
     as: "Backend Developer",
     title: "DayTask",
     description:
@@ -363,7 +374,7 @@ export const projects = [
     github: "https://github.com/slimani-amine/DayTask-Backend.git",
   },
   {
-    num: "12",
+    num: "13",
     as: "FullStack Developer",
     title: "Exclusive",
     description:
@@ -372,17 +383,6 @@ export const projects = [
     image: "/assets/work/exclusive.png",
     live: "",
     github: "https://github.com/slimani-amine/E-commerce.git",
-  },
-  {
-    num: "13",
-    as: "Frontend Developer",
-    title: "The Wild Oasis",
-    description:
-      "Hotel managment web application, handling both front-end and back-end development. Using React for a user-friendly interface and Node.js with Express for the back-end, I implemented features like booking management, room availability tracking, and payment integration, ensuring an efficient and smooth experience for both hotel staff and guests.",
-    stack: [{ name: "ReactJs" }, { name: "Tailwind" }, { name: "Supabase" }],
-    image: "/assets/work/the-wild-oasis.png",
-    live: "",
-    github: "https://github.com/slimani-amine/the-wild-oasis.git",
   },
   {
     num: "14",
